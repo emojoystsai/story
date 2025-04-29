@@ -32,7 +32,7 @@ ${drawingData.substring(0, 150)}...
 故事結尾以柔軟、溫暖、希望為基調作收。`;
 
     const response = await openai.createChatCompletion({
-      model: 'gpt-4',
+      model: 'gpt-3.5-turbo',
       messages: [
         {
           role: 'system',
