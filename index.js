@@ -37,9 +37,7 @@ app.post('/generate-story', async (req, res) => {
 請根據以下圖像描述，直接生成一段故事內容：
 
 【畫作描述】：
-${image}
-
-請根據這幅畫作，生成一段故事。`
+${image} `
       }],
       temperature: 0.9
       max_tokens: 150
