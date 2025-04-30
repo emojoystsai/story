@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Emojoys · 魔法繪境</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="scene1" class="scene">
+        <h1>Emojoys · 魔法繪境</h1>
+        <p>魔法來自於當下，隨手一畫，故事自來。</p>
+        <button onclick="goToScene(2)">踏上魔法旅程</button>
+    </section>
+
+    <section id="scene2" class="scene" style="display:none;">
+        <h2>讓自己穿梭在線條間。</h2>
+        <p>無需多想，隨心所欲的創作吧！</p>
+        <canvas id="drawingCanvas" width="320" height="320"></canvas>
+        <div>
+            <button onclick="clearCanvas()">重新畫</button>
+            <button onclick="generateStory()">開始生成故事</button>
+        </div>
+    </section>
+
+    <section id="scene3" class="scene" style="display:none;">
+        <p>小精靈正在召喚你的故事片段</p>
+        <div class="loader"></div>
+    </section>
+
+    <section id="scene4" class="scene" style="display:none;">
+        <h2>故事，因此展開。</h2>
+        <canvas id="resultCanvas" width="320" height="320"></canvas>
+        <div id="storyText" class="story-text"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
