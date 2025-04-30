@@ -38,11 +38,10 @@ app.post('/generate-story', async (req, res) => {
 
 【畫作描述】：
 ${image} `
-      }],
-      temperature: 0.9
-      max_tokens: 150
-    });
-
+     }],
+  temperature: 0.9,
+  max_tokens: 150
+});
     const story = completion.data.choices[0].message.content;
     res.json({ story });
   } catch (error) {
