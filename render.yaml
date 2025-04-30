@@ -1,7 +1,1 @@
-services:
-  - type: web
-    name: emojoys-gpt-api
-    env: node
-    plan: free
-    buildCommand: "npm install"
-    startCommand: "node index.js"
+
