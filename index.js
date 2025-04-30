@@ -33,6 +33,7 @@ ${image}
 請根據這幅畫作，生成一段故事。`
       }],
       temperature: 0.9
+      max_tokens: 150
     });
 
     const story = completion.data.choices[0].message.content;
