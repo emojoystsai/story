@@ -38,7 +38,7 @@ app.post('/generate-story', async (req, res) => {
 ${image}`
       }],
       temperature: 0.9,
-      max_tokens: 240
+      max_tokens: 300
     });
 
     const story = completion.data.choices[0].message.content;
